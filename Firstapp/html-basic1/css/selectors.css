@@ -1,0 +1,45 @@
+body {
+    background-color: #f0f0f0;
+}
+
+body div.loginDiv {
+padding: 15px;
+border: solid 1px #c0c0c0;
+box-shadow: 0 0 2px #777777;
+display: inline-block;
+}
+
+.loginDiv input {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.loginDiv input[type="email"] {
+    border: solid 1 px blueviolet;
+}
+
+
+.loginDiv input[type="password"] {
+    border: solid 1 px red;
+}
+
+.loginDiv input[class="form-control"] {
+    border: solid 1px red;
+}
+
+.loginDiv input[class*="blue"] {
+    border: solid 1px blue;
+}
+
+input[class*="control"] {
+    display: block;
+}
+
+.loginDiv button:hover {
+    box-shadow: 2px 2px 3px #c0c0c0;
+}
+
+.loginDiv input:focus {
+    box-shadow: 2px 2px 3px #c0c0c0;
+    border: none;
+}

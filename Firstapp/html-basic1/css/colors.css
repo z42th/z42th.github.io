@@ -1,0 +1,16 @@
+#colorDiv {
+display: inline-block;
+width: 100px;
+height: 100px;
+background-color: rgba(0,0,255,0.158);
+
+
+
+
+}
+
+html {
+  background-image: url("../img/jb.jpg");
+  background-repeat: repeat-y;
+
+}
