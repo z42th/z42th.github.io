@@ -1,0 +1,10 @@
+ npm -i express-generator -g
+C:\Users\Msi\AppData\Roaming\npm\node_modules\express-generator\bin\
+
+ npm -i json-server -g
+C:\Users\Msi\AppData\Roaming\npm\node_modules\json-server\lib\cli\bin.js
+
+start json-server:
+json-server --watch F:\Training360\Ujratervezes2.0\z42th.github.io\Firstapp\IFKSP-SERVER\db\db.json
+
+F:\Training360\Ujratervezes2.0\z42th.github.io\Firstapp\IFKSP-SERVER>
