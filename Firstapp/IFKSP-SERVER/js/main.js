@@ -1,5 +1,5 @@
 // Keys of users.
-let keys = ["id","name","email"];
+let keys = ["id", "name", "email"];
 
 // Get data from the server.
 function getServerData(url) {
@@ -40,7 +40,15 @@ function fillDataTable(data, tableID) {
         let tr = createAnyElement("tr");
         for (let k of keys) {
             let td = createAnyElement("td");
-            td.innerHTML = row[k];
+            if (k == "id") {
+                td.innerHTML = row[k];
+            } else {
+                let input = createAnyElement("input", {
+                    class: "form-control",
+                    value: row[k]
+                });
+                td.appendChild(input);
+            }
             tr.appendChild(td);
         }
         let btnGroup = createBtnGroup();
@@ -140,7 +148,7 @@ function createUser(btn) {
 }
 
 function getRowData(tr) {
-let inputs = tr.querySelectorAll("input.form-control");
+    let inputs = tr.querySelectorAll("input.form-control");
     let data = {};
     for (let i = 0; i < inputs.length; i++) {
         data[inputs[i].name] = inputs[i].value;
